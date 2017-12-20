@@ -1,0 +1,30 @@
+Week 3 summary:
+
+mergesort - mechanism; 
+
+two ways to sort an array of objects.
+
+(1) implementing java.lang.comparable<E> interface.
+need to define compareTo method.
+
+Object[] a will be sorted by
+Arrays.sort(a);
+// need to import java.util.Arrays;
+
+(2) using java.util.comparator interface
+need to define a private jComparator class, which
+has (override) a compare method (similar to compareTo);
+
+one can define multiple comparator methods (static or instance method)
+
+animal.class
+
+animal wolf = new animal(args);
+animal[] a = new animal[N];
+... // initialize the animal[]
+
+// sort with static methods (if defined)
+Arrays.sort(a, animal.STATIC_COMPARATOR);
+
+// sort with instance methods (if defined)
+Arrays.sort(a, wolf.INSTANCE_COMPARATOR);
